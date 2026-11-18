@@ -11,40 +11,39 @@ NeuroGuard is an academic Operating Systems project that modifies the **xv6-risc
 OS_Project/
 ├── xv6-riscv/                    # Modified xv6 kernel & user programs
 │   ├── kernel/
-│   │   ├── resman.h              # Resource manager headers & data structures
-│   │   ├── resman.c              # Core resource tracking, WFG & Work/Finish algorithms
-│   │   ├── neuroguard_infer.c    # Transpiled C ML decision logic (zero-dependency)
-│   │   ├── sysproc.c             # System call handlers (syscalls 24-30)
-│   │   └── proc.c                # Process exit hook (auto-reclamation)
+│   │   ├── resman.h             
+│   │   ├── resman.c          
+│   │   ├── neuroguard_infer.c   
+│   │   ├── sysproc.c        
+│   │   └── proc.c         
 │   ├── user/
-│   │   ├── safe_test.c           # Safe multi-resource allocation test
-│   │   ├── deadlock_test.c       # Circular wait test (Detection & Prevention modes)
-│   │   ├── contention.c          # High contention competition & dynamic risk test
-│   │   ├── stress_test.c         # Process exit auto-cleanup & stress stability test
-│   │   └── neuroguard.c          # Unified demonstration test runner
-│   └── Makefile                  # xv6 build configuration with NeuroGuard targets
+│   │   ├── safe_test.c         
+│   │   ├── deadlock_test.c     
+│   │   ├── contention.c     
+│   │   ├── stress_test.c   
+│   │   └── neuroguard.c        
+│   └── Makefile             
 │
 ├── ai_engine/                    # Machine Learning pipeline (Python & Scikit-learn)
-│   ├── dataset_generator.py      # Synthesizes 12,000+ realistic allocation states
-│   ├── train.py                  # Trains Decision Tree & Random Forest models
-│   ├── evaluate.py               # Generates confusion matrices & feature plots
-│   ├── model_export.py           # Transpiles Decision Tree directly into kernel C
-│   ├── models/                   # Saved .joblib model files
-│   ├── datasets/                 # deadlock_dataset.csv
-│   └── results/                  # Metrics JSON and PNG evaluation charts
+│   ├── dataset_generator.py    
+│   ├── train.py              
+│   ├── evaluate.py          
+│   ├── model_export.py       
+│   ├── models/             
+│   ├── datasets/         
+│   └── results/       
 │
 ├── experiments/                  # Reproducible Benchmarking Framework
-│   ├── benchmark.py              # Comparative performance benchmarks
-│   └── results/                  # Benchmark CSV data and tradeoff graphs
+│   ├── benchmark.py          
+│   └── results/            
 │
 ├── dashboard/                    # Interactive Streamlit Web Dashboard
-│   └── app.py                    # RAG/WFG visualizer & explainability panel
+│   └── app.py             
 │
 ├── REPORT.pdf                    # Project report with figures and terminal evidence
-└── README.md                     # This documentation file
+└── README.md        
 ```
 
-Open [REPORT.pdf](REPORT.pdf) for the formatted project report. The report links to the team's repository: https://github.com/UtkarshUmap/NeuroGuard.
 
 ---
 
