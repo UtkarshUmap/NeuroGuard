@@ -7,18 +7,17 @@ from PIL import Image
 
 st.set_page_config(
     page_title="NeuroGuard: AI-Powered Deadlock Prevention in xv6",
-    page_icon="🛡️",
     layout="wide"
 )
 
-st.title("🛡️ NeuroGuard Dashboard")
+st.title("NeuroGuard Dashboard")
 st.subheader("AI-Powered Predictive Deadlock Detection and Prevention in xv6 Operating System")
 
 tabs = st.tabs([
-    "📊 System & WFG Visualizer",
-    "🧠 AI Model Evaluation",
-    "📈 Benchmark Performance",
-    "🔍 Explainability ('Why Delayed?')"
+    "System & WFG Visualizer",
+    "AI Model Evaluation",
+    "Benchmark Performance",
+    "Explainability ('Why Delayed?')"
 ])
 
 with tabs[0]:
@@ -50,7 +49,7 @@ with tabs[0]:
         st.dataframe(req_data, use_container_width=True)
 
     st.markdown("### Wait-For Graph (WFG) Topology")
-    st.info("💡 **Graph Dependency:** P1 is waiting on P2 (holds R2). When P2 requests R1 (held by P1), a cycle (P1 ⇄ P2) is detected. NeuroGuard intercepts and delays P2's request.")
+    st.info("**Graph Dependency:** P1 is waiting on P2 (holds R2). When P2 requests R1 (held by P1), a cycle (P1 ⇄ P2) is detected. NeuroGuard intercepts and delays P2's request.")
 
 with tabs[1]:
     st.header("Machine Learning Model Performance")
@@ -101,7 +100,7 @@ with tabs[2]:
             st.image("experiments/results/delay_throughput.png", caption="Allocation Delay & Throughput Trade-off", use_container_width=True)
 
 with tabs[3]:
-    st.header("🔍 NeuroGuard Explainability Engine")
+    st.header("NeuroGuard Explainability Engine")
     st.markdown("### Question: *Why was this resource request delayed or rejected?*")
 
     st.markdown("""
@@ -124,4 +123,4 @@ with tabs[3]:
        - **Resolution:** Request denied to prevent deadlock cycle; Process PID 4 backs off and yields, allowing PID 3 to complete and release resources.
     """)
 
-    st.success("✅ **Result:** Zero system freeze, zero manual operator reboot, 100% deterministic safety guarantee.")
+    st.success("**Result:** Zero system freeze and zero manual operator reboot in this demonstration.")

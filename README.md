@@ -1,11 +1,11 @@
-# NeuroGuard 🛡️
+# NeuroGuard
 ## AI-Powered Predictive Deadlock Detection and Prevention in the xv6 Operating System
 
 NeuroGuard is an academic Operating Systems project that modifies the **xv6-riscv** kernel to support multi-instance resource management, graph-theoretic deadlock detection, and real-time AI-assisted predictive deadlock prevention.
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 OS_Project/
@@ -40,9 +40,7 @@ OS_Project/
 ├── dashboard/                    # Interactive Streamlit Web Dashboard
 │   └── app.py                    # RAG/WFG visualizer & explainability panel
 │
-├── REPORT.pdf                    # Humanized submission report with figures and terminal evidence
-├── REPORT.docx                   # Editable report source
-├── REPORT.md                     # Report notes and submission reminder
+├── REPORT.pdf                    # Project report with figures and terminal evidence
 └── README.md                     # This documentation file
 ```
 
@@ -50,7 +48,7 @@ Open [REPORT.pdf](REPORT.pdf) for the formatted project report. The report links
 
 ---
 
-## 🚀 Quick Start Guide
+## Quick Start Guide
 
 ### 1. Build and Run xv6 Kernel with NeuroGuard
 Ensure `riscv64-unknown-elf-gcc` and `qemu-system-riscv64` are installed:
@@ -64,7 +62,7 @@ To exit QEMU at any time, press `Ctrl+A` then `X`.
 
 ---
 
-## 🧪 Running Kernel Demonstrations Inside xv6
+## Running Kernel Demonstrations Inside xv6
 
 Once xv6 boots to the shell prompt (`$ `):
 
@@ -106,7 +104,7 @@ $ neuroguard
 
 ---
 
-## 🧠 Retraining the Machine Learning Pipeline
+## Retraining the Machine Learning Pipeline
 
 To regenerate the synthetic dataset, retrain models, produce evaluation charts, and re-export the kernel C inference logic:
 ```bash
@@ -128,7 +126,7 @@ cd xv6-riscv && make -j$(nproc) && cd ..
 
 ---
 
-## 📊 Running the Benchmarks
+## Running the Benchmarks
 To run comparative experiments across workload sizes:
 ```bash
 python3 experiments/benchmark.py
@@ -137,7 +135,7 @@ Output results and graphs are saved in `experiments/results/`.
 
 ---
 
-## 💻 Launching the Streamlit Dashboard
+## Launching the Streamlit Dashboard
 To launch the interactive web visualizer:
 ```bash
 streamlit run dashboard/app.py

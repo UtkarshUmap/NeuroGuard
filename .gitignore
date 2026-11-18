@@ -37,6 +37,8 @@ NeuroGuard_Final_Submission.zip
 # Local report-generation helper and drafting prompt (not project deliverables)
 /generate_report.py
 /build-prompt.md
+/REPORT.docx
+/REPORT.md
 
 # xv6 generated build artifacts (source assembly files use .S and remain tracked)
 xv6-riscv/**/*.o
