@@ -43,11 +43,10 @@ OS_Project/
 ├── REPORT.pdf                    # Humanized submission report with figures and terminal evidence
 ├── REPORT.docx                   # Editable report source
 ├── REPORT.md                     # Report notes and submission reminder
-├── generate_report.py            # Regenerates the editable report
 └── README.md                     # This documentation file
 ```
 
-Open [REPORT.pdf](REPORT.pdf) for the formatted project report. Replace the GitHub URL placeholder on its cover with the team's own repository link before submitting.
+Open [REPORT.pdf](REPORT.pdf) for the formatted project report. The report links to the team's repository: https://github.com/UtkarshUmap/NeuroGuard.
 
 ---
 

@@ -34,6 +34,10 @@ NeuroGuard_Final_Submission.zip
 # Personal viva-preparation notes (kept locally, not part of project submission)
 /docs/viva_questions.md
 
+# Local report-generation helper and drafting prompt (not project deliverables)
+/generate_report.py
+/build-prompt.md
+
 # xv6 generated build artifacts (source assembly files use .S and remain tracked)
 xv6-riscv/**/*.o
 xv6-riscv/**/*.d
