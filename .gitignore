@@ -1,0 +1,48 @@
+# Local Python environments and cache files
+.venv/
+venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# Editor and OS metadata
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary logs and local test captures
+*.log
+test-xv6.out
+
+# Duplicate generated submission bundle
+NeuroGuard_Project_Submission/
+NeuroGuard_Project_Submission.zip
+NeuroGuard_Final_Submission.zip
+
+# Personal viva-preparation notes (kept locally, not part of project submission)
+/docs/viva_questions.md
+
+# xv6 generated build artifacts (source assembly files use .S and remain tracked)
+xv6-riscv/**/*.o
+xv6-riscv/**/*.d
+xv6-riscv/**/*.asm
+xv6-riscv/**/*.sym
+xv6-riscv/**/*.img
+xv6-riscv/kernel/kernel
+xv6-riscv/mkfs/mkfs
+xv6-riscv/user/_*
+
+# Temporary backup of the original nested upstream Git metadata
+xv6-riscv/.git-upstream-backup/

@@ -1,0 +1,10 @@
+workload,policy,procs,resources,operations,deadlocks_occurred,deadlocks_prevented,avg_delay_ms,throughput_ops_sec,inference_overhead_us
+"Light (4 Procs, 3 Res)",Traditional Unmanaged,4,3,300,0,0,0.925,519.5,0.45
+"Light (4 Procs, 3 Res)",Traditional Detection,4,3,300,177,0,1.18,458.7,0.45
+"Light (4 Procs, 3 Res)",NeuroGuard AI,4,3,300,0,50,0.917,521.6,111.71
+"Medium (8 Procs, 5 Res)",Traditional Unmanaged,8,5,600,0,0,0.892,528.4,0.45
+"Medium (8 Procs, 5 Res)",Traditional Detection,8,5,600,335,0,1.117,472.4,0.45
+"Medium (8 Procs, 5 Res)",NeuroGuard AI,8,5,600,0,74,1.046,488.8,79.05
+"Heavy (16 Procs, 8 Res)",Traditional Unmanaged,16,8,1200,0,0,0.895,527.7,0.45
+"Heavy (16 Procs, 8 Res)",Traditional Detection,16,8,1200,772,0,1.287,437.3,0.45
+"Heavy (16 Procs, 8 Res)",NeuroGuard AI,16,8,1200,0,225,1.174,459.9,84.09

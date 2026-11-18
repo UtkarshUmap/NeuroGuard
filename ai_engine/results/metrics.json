@@ -1,0 +1,92 @@
+{
+  "Decision Tree": {
+    "accuracy": 0.9241666666666667,
+    "precision": 0.9242535115286735,
+    "recall": 0.9241666666666667,
+    "f1_score": 0.9238735376172434,
+    "confusion_matrix": [
+      [
+        531,
+        0,
+        0
+      ],
+      [
+        0,
+        957,
+        70
+      ],
+      [
+        4,
+        108,
+        730
+      ]
+    ],
+    "feature_importances": [
+      0.1077564062767571,
+      0.0046337395765508015,
+      0.029045340612539255,
+      0.0001238271811357822,
+      0.003948506058029625,
+      0.005835338121037671,
+      0.5895289080579732,
+      0.0015233663212025474,
+      0.25760456779477403
+    ],
+    "feature_names": [
+      "active_procs",
+      "total_resources",
+      "available_ratio_pct",
+      "allocated_ratio_pct",
+      "pending_requests",
+      "waiting_procs",
+      "contention_ratio_pct",
+      "max_chain_length",
+      "has_cycle"
+    ]
+  },
+  "Random Forest": {
+    "accuracy": 0.9333333333333333,
+    "precision": 0.9332340175758228,
+    "recall": 0.9333333333333333,
+    "f1_score": 0.933158154484788,
+    "confusion_matrix": [
+      [
+        531,
+        0,
+        0
+      ],
+      [
+        0,
+        960,
+        67
+      ],
+      [
+        4,
+        89,
+        749
+      ]
+    ],
+    "feature_importances": [
+      0.09608820376121545,
+      0.025567449121545974,
+      0.11910434088493957,
+      0.08818243364304375,
+      0.13516748312398388,
+      0.04294966292315953,
+      0.3052160226062808,
+      0.027635065035761564,
+      0.1600893389000695
+    ],
+    "feature_names": [
+      "active_procs",
+      "total_resources",
+      "available_ratio_pct",
+      "allocated_ratio_pct",
+      "pending_requests",
+      "waiting_procs",
+      "contention_ratio_pct",
+      "max_chain_length",
+      "has_cycle"
+    ]
+  }
+}
